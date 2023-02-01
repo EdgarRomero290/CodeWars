@@ -15,12 +15,5 @@ def validate_pin(pin):
 
 validate_pin('a123')
 
-########Mejor forma#######
 
-#def validate_pin(pin):
-#    return len(pin) in (4, 6) and pin.isdigit()
 
-#import re
-#def validate_pin(pin):
-#   return true or false
-#   return bool(re.fullmatch("\d{4}|\d{6}", pin))print(bool(re.fullmatch("\d{4}|\d{6}", pin)))
