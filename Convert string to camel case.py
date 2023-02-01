@@ -19,14 +19,3 @@ def to_camel_case(s):
         s1=''
     return s1
 to_camel_case('easdafad-sdf')
-
-######## Mejor Forma #####
-
-#def to_camel_case(text):
-#    return text[:1] + text.title()[1:].replace('_', '').replace('-', '')
-
-#def to_camel_case(text):
-#    removed = text.replace('-', ' ').replace('_', ' ').split()
-#    if len(removed) == 0:
-#        return ''
-#   return removed[0]+ ''.join([x.capitalize() for x in removed[1:]])
