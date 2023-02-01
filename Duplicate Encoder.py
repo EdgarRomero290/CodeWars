@@ -10,6 +10,7 @@
 #"recede"   =>  "()()()"
 #"Success"  =>  ")())())"
 #"(( @"     =>  "))((" 
+
 import re
 def duplicate_encode(word):
     lethers=re.findall(".{1}", word.lower())
@@ -21,12 +22,9 @@ def duplicate_encode(word):
         else:
             result=result+'('
     return result 
+
 duplicate_encode("Success")    
 
-######## Mejor Forma #####
-
-# def duplicate_encode(word):
-##return "".join(["(" if word.lower().count(c) == 1 else ")" for c in word.lower()])
 
 
 
