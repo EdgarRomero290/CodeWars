@@ -26,18 +26,3 @@ def DNA_strand(dna):
             result=result+coding[x]
     return result
 DNA_strand("ATTGC")
-
-######## Mejor Forma #####
-
-#import string
-#def DNA_strand(dna):
-    #return dna.translate(string.maketrans("ATCG","TAGC"))
-    # Python 3.4 solution || you don't need to import anything :)
-    # return dna.translate(str.maketrans("ATCG","TAGC"))
-
-#pairs = {'A':'T','T':'A','C':'G','G':'C'}
-#def DNA_strand(dna):
-    #return ''.join([pairs[x] for x in dna])
-
-#def DNA_strand(dna):
-  #return "".join([{'A':'T', 'T':'A', 'C':'G', 'G':'C'}[l] for l in dna])    
