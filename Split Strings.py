@@ -22,11 +22,5 @@ def solution(s):
     return l
 solution('abcdef')    
 
-######## Mejor Forma #####
 
-#import re
-#def solution(s):
-    #return re.findall(".{2}", s + "_")
 
-#def solution(s):
-    #return [(s + "_")[i:i + 2] for i in range(0, len(s), 2)]   
