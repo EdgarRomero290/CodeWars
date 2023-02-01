@@ -21,17 +21,5 @@ def narcissistic( value ):
     result=0
     l=[int(x) for x in re.findall(".{1}", str(value))]
     for x in range(len(l)):
-        result=result+(l[x]**(len(l)))
-    if value==result:
-        Q=True
-    else:
-        Q=False    
-    return Q
-
-######## Mejor Forma #####
-
-#def narcissistic(value):
-    #return value == sum(int(x) ** len(str(value)) for x in str(value))
-
-#def narcissistic(value):
-    #return bool(value==sum([int(a) ** len(str(value)) for a in str(value)]))
+        result=result+(l[x]**(len(l))) 
+    return True if value==result else False
